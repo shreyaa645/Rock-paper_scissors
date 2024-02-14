@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("./assets/bg.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    min-height: 100vh;
+    padding: 3rem;
+}
+
+h1 {
+    color: rgb(90, 37, 192);
+    font-size: 3rem;
+}
+
+.score {
+    color: white;
+    font-size: 4rem;
+}
+
+.container {
+    margin-top: 2rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.home-img {
+    flex: 1;
+    justify-content: end;
+    display: flex;
+}
+
+.home-img img {
+    width: 28rem;
+}
+
+#play-action {
+    display: flex;
+    gap: 1.5rem;
+    flex: 1;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#play-action:hover {
+    cursor: pointer;
+}
+
+#play-action p {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: white;
+}
+
+#play-action img {
+    height: 2.5rem;
+    width: auto;
+}
+
+.player,
+.computer {
+    border: 2px solid #ffc434;
+    min-width: 23rem;
+    color: white;
+    font-size: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    max-width: 25rem;
+    align-self: stretch;
+}
+
+.player img {
+    margin-top: auto;
+}
+
+.computer img {
+    margin-bottom: auto;
+}
+
+.vs img {
+    width: 5rem;
+}
+
+#btns {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#btns img {
+    width: 5.5rem;
+}
+
+#btns img:hover {
+    cursor: pointer;
+}
+
+#hand-player,
+#hand-computer {
+    width: 100%;
+}
+
+#gameover {
+    margin: 2rem 0;
+    visibility: hidden;
+}
+
+#gameover h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: white;
+}
+
+#gameover button {
+    margin-top: 0.5rem;
+    background-color: #ffc434;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    font-weight: 700;
+    color: white;
+    font-size: 1.5rem;
+    border: 0px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width:512px) {
+    body {
+        padding: 1rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .player,
+    .computer {
+        margin: auto;
+        min-height: 26rem;
+    }
+
+    .home-img img {
+        width: 100%;
+    }
+
+    .vs img {
+        width: 3rem;
+    }
+}
